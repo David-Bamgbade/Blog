@@ -1,7 +1,8 @@
-package models;
+package data.models;
 
 import java.time.LocalDateTime;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Post {
@@ -9,7 +10,7 @@ public class Post {
     private String title;
     private int Id;
     private String content;
-    private List<Comment> comments;
+    private List<Comment> comments = new ArrayList<>();
 
     public LocalDateTime getCreatedAt() {
         return date;
@@ -22,6 +23,7 @@ public class Post {
     public List<Comment> getComments() {
         return comments;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -34,8 +36,9 @@ public class Post {
         this.date = time;
     }
 
-    public void setId(int tag){
-        this.Id = tag;
+    public void setId(int id) {
+        this.Id = id;
+
     }
 
     public int getId(){
@@ -57,9 +60,6 @@ public class Post {
     public void setContent(String content) {
         this.content = content;
     }
-
-
-    
 
 
 }

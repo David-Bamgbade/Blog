@@ -1,6 +1,6 @@
 package repositories;
 
-import models.Post;
+import data.models.Post;
 
 import java.util.List;
 
@@ -11,4 +11,5 @@ public interface PostRepository {
     void deleteAlL();
     Post save(Post something);
     void deleteById(int element);
+    boolean isEmpty();
 }

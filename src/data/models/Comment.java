@@ -1,4 +1,4 @@
-package models;
+package data.models;
 
 import java.time.LocalDateTime;
 
@@ -9,7 +9,7 @@ public class Comment {
     private int postId;
     private LocalDateTime time;
 
-    public void setId(int key){
+    public void setCommentId(int key){
         this.id = key;
     }
 
@@ -17,7 +17,7 @@ public class Comment {
         this.userId = key;
     }
 
-    public String getContent(){
+    public String getCommentText(){
         return content;
     }
 
@@ -29,7 +29,7 @@ public class Comment {
         return userId;
     }
 
-    public void setContent(String story){
+    public void setCommentText(String story){
         this.content = story;
     }
 
@@ -37,7 +37,7 @@ public class Comment {
         return postId;
     }
 
-    public int getId(){
+    public int getCommentId(){
         return id;
     }
 
